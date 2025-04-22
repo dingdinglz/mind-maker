@@ -20,7 +20,7 @@
             "args": [
                 "-y",
                 "@modelcontextprotocol/server-filesystem",
-                "/Users/dinglizhi/Desktop/project/mind-maker"
+                "填上运行项目的地址！！！"
             ]
         }
     ]
