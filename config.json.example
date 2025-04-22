@@ -1,0 +1,27 @@
+{
+    "model": {
+        "model": "deepseek-chat",
+        "baseurl": "https://api.deepseek.com",
+        "apikey": ""
+    },
+    "mcps": [
+        {
+            "command": "uvx",
+            "env": [],
+            "args": [
+                "mindmap-mcp-server",
+                "--return-type",
+                "html"
+            ]
+        },
+        {
+            "command": "npx",
+            "env": [],
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "/Users/dinglizhi/Desktop/project/mind-maker"
+            ]
+        }
+    ]
+}
