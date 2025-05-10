@@ -6,8 +6,9 @@ import (
 )
 
 type Config struct {
-	Model ModelConfig `json:"model"`
-	Mcps  []McpConfig `json:"mcps"`
+	Model  ModelConfig `json:"model"`
+	Mcps   []McpConfig `json:"mcps"`
+	Search bool        `json:"search"`
 }
 
 type ModelConfig struct {

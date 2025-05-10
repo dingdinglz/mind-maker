@@ -50,11 +50,14 @@ func main() {
 	}
 
 	tools := GenerateTools()
-	ducktool, e := duckduckgo.NewTool(ctx, &duckduckgo.Config{})
-	if e != nil {
-		panic(e)
+	if ActivateConfig.Search {
+		fmt.Println("search mode enabled")
+		ducktool, e := duckduckgo.NewTool(ctx, &duckduckgo.Config{})
+		if e != nil {
+			panic(e)
+		}
+		tools = append(tools, ducktool)
 	}
-	tools = append(tools, ducktool)
 	ragent, e := react.NewAgent(ctx, &react.AgentConfig{
 		Model: chatModel,
 		ToolsConfig: compose.ToolsNodeConfig{
