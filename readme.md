@@ -20,7 +20,9 @@
 
 ### 快速上手
 
-1. 将config.json.example改名为config.json，完成model字段（llm配置），将filesystem的args中的地址改成当前地址
+1. 将config.json.example改名为config.json，完成model字段（llm配置），将filesystem的args中的地址改成当前地址，根据需要调整search的值（是否开启在线搜索）
+
+> 你可以在mcps设置中自行添加需要的额外的mcp
 
 2. `go build`编译出可执行文件
 
